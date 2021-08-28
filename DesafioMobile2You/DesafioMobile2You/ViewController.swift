@@ -8,10 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var arrowBackButton: UIButton!
+    @IBOutlet weak var artistImageView: UIImageView!
+    @IBOutlet weak var moviesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
