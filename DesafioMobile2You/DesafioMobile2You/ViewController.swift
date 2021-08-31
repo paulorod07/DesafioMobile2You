@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.configArrowBackButton()
+    }
+    
+    private func configArrowBackButton() {
+        self.arrowBackButton.backgroundColor = .gray
+        self.arrowBackButton.layer.cornerRadius = self.arrowBackButton.frame.height / 2
     }
 
 
