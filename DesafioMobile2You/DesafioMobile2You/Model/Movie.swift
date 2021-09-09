@@ -8,8 +8,8 @@
 import UIKit
 
 struct Movie {
-    let movieImage: UIImage
-    let movieTitle: String
-    let movieYear: Int
-    let movieGenre: String
+    let movieImage: UIImage?
+    let movieTitle: String?
+    let movieYear: Int?
+    let movieGenre: String?
 }

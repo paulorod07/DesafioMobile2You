@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="MovieHeaderTableViewCell" customModule="DesafioMobile2You" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Very Best Of Johnny Depp" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-6Y-pb0">
+                        <rect key="frame" x="10" y="15" width="200" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="3dq-38-V1n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgZ-M8-ZUn">
+                        <rect key="frame" x="290" y="15" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="gJY-QC-FYf"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button" image="heart" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2K Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlN-NM-ZAf">
+                        <rect key="frame" x="35" y="88" width="56.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fYH-9M-F6O">
+                        <rect key="frame" x="10" y="76.5" width="20" height="37.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="icK-vD-qIt"/>
+                            <constraint firstAttribute="width" constant="20" id="ih9-Rn-FMD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 of 10 Watched" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-yp-zQ4">
+                        <rect key="frame" x="111.5" y="87.5" width="93" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fYH-9M-F6O" secondAttribute="bottom" constant="5" id="Dwy-vd-hAG"/>
+                    <constraint firstItem="MZs-yp-zQ4" firstAttribute="centerY" secondItem="qlN-NM-ZAf" secondAttribute="centerY" id="HEv-1h-AJv"/>
+                    <constraint firstItem="qlN-NM-ZAf" firstAttribute="leading" secondItem="fYH-9M-F6O" secondAttribute="trailing" constant="5" id="WDA-4j-gO0"/>
+                    <constraint firstItem="MZs-yp-zQ4" firstAttribute="leading" secondItem="qlN-NM-ZAf" secondAttribute="trailing" constant="20" id="YsI-Ra-BjR"/>
+                    <constraint firstItem="fYH-9M-F6O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aBG-U4-2Qw"/>
+                    <constraint firstItem="AgZ-M8-ZUn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="e0k-KB-mf5"/>
+                    <constraint firstItem="HVy-6Y-pb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qvH-z7-cgQ"/>
+                    <constraint firstAttribute="trailing" secondItem="AgZ-M8-ZUn" secondAttribute="trailing" constant="10" id="uaA-t6-ujT"/>
+                    <constraint firstItem="HVy-6Y-pb0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vYw-J0-ONO"/>
+                    <constraint firstItem="qlN-NM-ZAf" firstAttribute="centerY" secondItem="fYH-9M-F6O" secondAttribute="centerY" id="vlY-QK-nzm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="37.681159420289859" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
