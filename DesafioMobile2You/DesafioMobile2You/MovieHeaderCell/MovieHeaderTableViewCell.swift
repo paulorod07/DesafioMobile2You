@@ -9,6 +9,12 @@ import UIKit
 
 class MovieHeaderTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var heartImageView: UIImageView!
+    @IBOutlet weak var watchedLabel: UILabel!
+    
+    @IBOutlet weak var heartButton: UIButton!
     static let identifier: String = "MovieHeaderTableViewCell"
     
     static func nib() -> UINib {
@@ -19,5 +25,13 @@ class MovieHeaderTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    @IBAction func tappedHeartButton(_ sender: UIButton) {
+    }
+    
+//    func setupCell(movieData: Movie) {
+//        self.titleLabel.text = movieData.movieTitle
+//    }
+    
 
 }
